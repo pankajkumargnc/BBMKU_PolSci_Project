@@ -1,0 +1,313 @@
+Created At: 2026-06-30T06:06:15Z
+Completed At: 2026-06-30T06:06:16Z
+File Path: `file:///c:/Users/panka/Music/BBMKU_PolSci_Project_Structure/index.html`
+Total Lines: 2338
+Total Bytes: 227966
+Showing lines 800 to 1100
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+800:               class="en">Term coined by Arne Naess. It asserts that all living beings in nature have equal intrinsic
+801:               value; humans are not superior to nature.</span></p>
+802:         </div>
+803: 
+804:         <!-- Paper 104 -->
+805:         <div class="paper-section">
+806:           <h3 class="paper-title"><span class="hi">PSC-C-104: भारतीय सरकार एवं राजनीति</span><span class="en">PSC-C-104:
+807:               Indian Govt. & Politics</span></h3>
+808: 
+809:           <h4 class="unit-title"><span class="hi">इकाई 2 एवं 3: मूल अधिकार एवं नीति निर्देशक तत्व (DPSP)</span><span
+810:               class="en">Unit 2 & 3: Fundamental Rights & DPSP</span></h4>
+811:           <ul>
+812:             <li><strong><span class="hi">अनुच्छेद 14:</span><span class="en">Article 14:</span></strong> <span
+813:                 class="hi">कानून के समक्ष समानता।</span><span class="en">Equality before law.</span></li>
+814:             <li><strong><span class="hi">अनुच्छेद 21:</span><span class="en">Article 21:</span></strong> <span
+815:                 class="hi">जीवन और व्यक्तिगत स्वतंत्रता का अधिकार।</span><span class="en">Right to life and personal
+816:                 liberty.</span></li>
+817:             <li><strong><span class="hi">अनुच्छेद 32:</span><span class="en">Article 32:</span></strong> <span
+818:                 class="hi">संवैधानिक उपचारों का अधिकार — डॉ. अम्बेडकर ने इसे 'संविधान का हृदय और आत्मा' कहा है। इसके तहत
+819:                 सुप्रीम कोर्ट 5 प्रकार के <strong>रिट (Writs)</strong> जारी करता है: बंदी प्रत्यक्षीकरण, परमादेश,
+820:                 प्रतिषेध, उत्प्रेषण, अधिकार पृच्छा।</span><span class="en">Right to Constitutional Remedies — Dr.
+821:                 Ambedkar called it the 'Heart and Soul of the Constitution'. Under this, the Supreme Court issues 5
+822:                 types of <strong>Writs</strong>: Habeas Corpus, Mandamus, Prohibition, Certiorari, Quo-Warranto.</span>
+823:             </li>
+824:           </ul>
+825:           <p><strong><span class="hi">राज्य के नीति निर्देशक तत्व (DPSP - भाग IV):</span><span class="en">Directive
+826:                 Principles of State Policy (DPSP - Part IV):</span></strong> <span class="hi">ये न्यायसंगत (Justiciable)
+827:               नहीं हैं लेकिन शासन में मौलिक हैं। ये आयरिश संविधान से लिए गए हैं और इनका उद्देश्य 'कल्याणकारी राज्य'
+828:               (Welfare state) स्थापित करना है। 1980 के मिनर्वा मिल्स मामले में सुप्रीम कोर्ट ने मूल अधिकारों और DPSP के
+829:               बीच 'सामंजस्य' (Harmony) को संविधान का मूल ढांचा माना।</span><span class="en">These are non-justiciable
+830:               but fundamental in the governance of the country. Borrowed from the Irish Constitution, they aim to
+831:               establish a 'Welfare state'. In the Minerva Mills case (1980), the Supreme Court held that 'Harmony'
+832:               between Fundamental Rights and DPSP is part of the basic structure of the Constitution.</span></p>
+833: 
+834:           <h4 class="unit-title"><span class="hi">इकाई 4 से 9: केंद्र-राज्य संबंध और न्यायिक सक्रियता</span><span
+835:               class="en">Unit 4 to 9: Centre-State Relations & Judicial Activism</span></h4>
+836:           <ul>
+837:             <li><strong><span class="hi">सरकारिया आयोग (1983):</span><span class="en">Sarkaria Commission
+838:                   (1983):</span></strong> <span class="hi">केंद्र-राज्य संबंधों की समीक्षा के लिए नियुक्त। अनुच्छेद 356
+839:                 (राष्ट्रपति शासन) के दुरुपयोग को रोकने की सिफारिश की।</span><span class="en">Appointed to review
+840:                 Centre-State relations. Recommended preventing the misuse of Article 356 (President's Rule).</span></li>
+841:             <li><strong><span class="hi">संसद (विधायिका):</span><span class="en">Parliament
+842:                   (Legislature):</span></strong> <span class="hi">लोकसभा (जनता का सदन, धन विधेयक की विशेष शक्ति) और
+843:                 राज्यसभा (राज्यों का स्थायी सदन, एक-तिहाई सदस्य हर 2 वर्ष में सेवानिवृत्त)।</span><span class="en">Lok
+844:                 Sabha (House of the People, special power over Money Bills) and Rajya Sabha (Permanent House of States,
+845:                 one-third members retire every 2 years).</span></li>
+846:             <li><strong><span class="hi">न्यायिक सक्रियतावाद (Judicial Activism) और जनहित याचिका (PIL):</span><span
+847:                   class="en">Judicial Activism and PIL:</span></strong> <span class="hi">भारत में 1970 के दशक में जस्टिस
+848:                 पी. एन. भगवती और वी. आर. कृष्ण अय्यर ने PIL की शुरुआत की, जिससे न्याय प्रणाली का लोकतंत्रीकरण
+849:                 हुआ।</span><span class="en">In India, Justices P. N. Bhagwati and V. R. Krishna Iyer introduced Public
+850:                 Interest Litigation (PIL) in the 1970s, leading to the democratization of the justice system.</span>
+851:             </li>
+852:           </ul>
+853:         </div>
+854: 
+855:         <!-- PHASE 11: SEMESTER 1 MASTER Q&A & TIPS -->
+856:         <div class="paper-section" id="sem1-qa">
+857:           <h3 class="paper-title" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white;">
+858:             <i class="fas fa-trophy"></i>
+859:             <span class="hi">सेमेस्टर I - मास्टर Q&A और UGC NET टिप्स</span>
+860:             <span class="en">Semester I - Master Q&A & UGC NET Tips</span>
+861:           </h3>
+862: 
+863:           <p class="intro-text">
+864:             <span class="hi">परीक्षा में सर्वोच्च अंक (Gold Medal) और JRF के लिए अति-महत्वपूर्ण प्रश्न।</span>
+865:             <span class="en">Highly important questions for Gold Medal in University exams and JRF.</span>
+866:           </p>
+867: 
+868:           <!-- PAPER 1 (FC-101 / PSC-F-101) -->
+869:           <h4 class="unit-title" style="color: #6366f1;">Political Theory (राजनीतिक सिद्धांत)</h4>
+870:           <div class="content-box">
+871:             <p><strong>Top 5 Short Questions (2-5 Marks)</strong></p>
+872:             <ol>
+873:               <li><strong>What is the 'Post-Behavioral Revolution'?</strong> Led by David Easton, focusing on 'Action' and 'Relevance' to solve real-world problems.</li>
+874:               <li><strong>Explain John Rawls' 'Veil of Ignorance'.</strong> A thought experiment where individuals design a just society without knowing their status.</li>
+875:               <li><strong>Define 'Negative Liberty'.</strong> The absence of external constraints (Hobbes, Berlin).</li>
+876:               <li><strong>What is 'Multiculturalism'?</strong> A political philosophy that accommodates cultural differences of minority groups.</li>
+877:               <li><strong>What is 'Hegemony' (Gramsci)?</strong> Ideological domination of the ruling class through manufactured consent.</li>
+878:             </ol>
+879:             <p><strong>Top 3 Long Questions (15-20 Marks)</strong></p>
+880:             <ul>
+881:               <li><strong>Q1.</strong> Examine the debate on the 'Decline and Resurgence' of Political Theory. (Focus: Easton, Laslett, Rawls).</li>
+882:               <li><strong>Q2.</strong> Critically analyze John Rawls' Theory of Justice. (Focus: Two Principles, Difference Principle).</li>
+883:               <li><strong>Q3.</strong> Compare Negative and Positive Liberty with reference to Isaiah Berlin.</li>
+884:             </ul>
+885:             <div class="info-box" style="border-left-color: #f59e0b;">
+886:               <h4>🎓 UGC NET Expert Tips</h4>
+887:               <p>Memorize Isaiah Berlin's 1958 essay "Two Concepts of Liberty". Know Peter Laslett's quote: "Political philosophy is dead."</p>
+888:             </div>
+889:           </div>
+890: 
+891:           <!-- PAPER 2 (CC-102 / PSC-C-103) -->
+892:           <h4 class="unit-title" style="color: #6366f1;">Western Political Thought (पाश्चात्य राजनीतिक विचार)</h4>
+893:           <div class="content-box">
+894:             <p><strong>Top 5 Short Questions (2-5 Marks)</strong></p>
+895:             <ol>
+896:               <li><strong>What is Plato's concept of 'Philosopher King'?</strong> A ruler with true knowledge, free from family/property ties.</li>
+897:               <li><strong>Define Aristotle's 'Distributive Justice'.</strong> Distribution of offices according to merit (geometric proportion).</li>
+898:               <li><strong>What is Hobbes' 'State of Nature'?</strong> "War of every man against every man"; life is solitary, poor, nasty, brutish, and short.</li>
+899:               <li><strong>What is J.S. Mill's 'Harm Principle'?</strong> State interference is only justified to prevent harm to others.</li>
+900:               <li><strong>Define Marx's 'Historical Materialism'.</strong> Material conditions (base) determine the social and political structure (superstructure).</li>
+901:             </ol>
+902:             <p><strong>Top 3 Long Questions (15-20 Marks)</strong></p>
+903:             <ul>
+904:               <li><strong>Q1.</strong> Compare and contrast the Social Contract theories of Hobbes, Locke, and Rousseau.</li>
+905:               <li><strong>Q2.</strong> Analyze Karl Marx's critique of Capitalism and his vision of a Communist society.</li>
+906:               <li><strong>Q3.</strong> Evaluate Rousseau's paradox: "Man is forced to be free."</li>
+907:             </ul>
+908:             <div class="info-box" style="border-left-color: #f59e0b;">
+909:               <h4>🎓 UGC NET Expert Tips</h4>
+910:               <p>Chronology is King! Arrange Plato's books (Republic, Statesman, Laws) in order. Understand the difference between Hegel's Dialectical Idealism and Marx's Dialectical Materialism.</p>
+911:             </div>
+912:           </div>
+913: 
+914:           <!-- PAPER 3 (CC-103 / PSC-C-102) -->
+915:           <h4 class="unit-title" style="color: #6366f1;">Indian Political Thought (भारतीय राजनीतिक विचार)</h4>
+916:           <div class="content-box">
+917:             <p><strong>Top 5 Short Questions (2-5 Marks)</strong></p>
+918:             <ol>
+919:               <li><strong>Explain Kautilya's concept of 'Amatya'.</strong> High-ranking officials/ministers in the Saptanga theory.</li>
+920:               <li><strong>What is the 'Drain Theory'?</strong> Dadabhai Naoroji's theory that British rule systematically drained India's wealth.</li>
+921:               <li><strong>Define Gandhi's 'Trusteeship'.</strong> Wealthy individuals act as 'trustees', using surplus for societal welfare.</li>
+922:               <li><strong>What is 'Radical Humanism'?</strong> M.N. Roy's philosophy focusing on individual reason and freedom, rejecting Marxism.</li>
+923:               <li><strong>What is 'Annihilation of Caste'?</strong> B.R. Ambedkar's call to destroy the caste system and its religious texts.</li>
+924:             </ol>
+925:             <p><strong>Top 3 Long Questions (15-20 Marks)</strong></p>
+926:             <ul>
+927:               <li><strong>Q1.</strong> Critically examine Kautilya's Saptanga Theory of State and Mandala Theory.</li>
+928:               <li><strong>Q2.</strong> Evaluate the debate between Gandhi and Ambedkar on the issue of Caste and Untouchability.</li>
+929:               <li><strong>Q3.</strong> Analyze the political philosophy of Bal Gangadhar Tilak (Swaraj, Nationalism).</li>
+930:             </ul>
+931:             <div class="info-box" style="border-left-color: #f59e0b;">
+932:               <h4>🎓 UGC NET Expert Tips</h4>
+933:               <p>Differentiate ideological clashes (Gandhi vs Ambedkar, Tilak vs Gokhale). Memorize journals (Mooknayak, Harijan, Young India).</p>
+934:             </div>
+935:           </div>
+936: 
+937:           <!-- PAPER 4 (CC-104 / PSC-C-104) -->
+938:           <h4 class="unit-title" style="color: #6366f1;">Comparative Politics (तुलनात्मक राजनीति)</h4>
+939:           <div class="content-box">
+940:             <p><strong>Top 5 Short Questions (2-5 Marks)</strong></p>
+941:             <ol>
+942:               <li><strong>Define David Easton's 'Input-Output Model'.</strong> A system where 'inputs' (demands) are converted into 'outputs' (policies).</li>
+943:               <li><strong>What is 'Interest Articulation'?</strong> Expressing demands to decision-makers (done by pressure groups).</li>
+944:               <li><strong>What is 'Political Culture'?</strong> Almond and Verba's concept (Parochial, Subject, Participant cultures).</li>
+945:               <li><strong>Differentiate Federal and Unitary systems.</strong> Federal divides power (USA, India); Unitary centralizes power (UK).</li>
+946:               <li><strong>Explain 'Rule of Law'.</strong> No one is above the law (A.V. Dicey).</li>
+947:             </ol>
+948:             <p><strong>Top 3 Long Questions (15-20 Marks)</strong></p>
+949:             <ul>
+950:               <li><strong>Q1.</strong> Critically examine the Structural-Functional approach of Gabriel Almond.</li>
+951:               <li><strong>Q2.</strong> Discuss the theories of Political Development formulated by Lucian Pye and Samuel Huntington.</li>
+952:               <li><strong>Q3.</strong> Compare the Presidential system of the USA with the Parliamentary system of the UK.</li>
+953:             </ul>
+954:             <div class="info-box" style="border-left-color: #f59e0b;">
+955:               <h4>🎓 UGC NET Expert Tips</h4>
+956:               <p>Memorize the 5 countries in 'The Civic Culture' (USA, UK, Germany, Italy, Mexico). Match Almond's structures correctly (Interest Articulation = Pressure Groups).</p>
+957:             </div>
+958:           </div>
+959:         </div>
+960:       </div>
+961: 
+962:       <!-- SEMESTER 2 -->
+963:       <div id="sem2" class="tab-pane">
+964:         <h2 class="semester-title"><span class="hi">सेमेस्टर II — कोर पाठ्यक्रम</span><span class="en">Semester II —
+965:             Core Courses</span></h2>
+966: 
+967:         <!-- Paper 205 -->
+968:         <div class="paper-section">
+969:           <h3 class="paper-title"><span class="hi">PSC-S-205: शैक्षणिक लेखन एवं संचार कौशल</span><span
+970:               class="en">PSC-S-205: Academic Writing and Communication Skills</span></h3>
+971:           <h4 class="unit-title"><span class="hi">इकाई 1, 2 एवं 6: शैक्षणिक लेखन और संदर्भ शैलियाँ</span><span
+972:               class="en">Unit 1, 2 & 6: Academic Writing and Citation Styles</span></h4>
+973:           <p><strong><span class="hi">शैक्षणिक लेखन:</span><span class="en">Academic Writing:</span></strong> <span
+974:               class="hi">विश्वविद्यालयों और विद्वत्तापूर्ण प्रकाशनों में प्रयुक्त लेखन की एक औपचारिक शैली। इसकी
+975:               विशेषताएँ हैं: स्पष्ट तर्क, साक्ष्य-आधारित दावे, औपचारिक स्वर, सटीक भाषा और उचित उद्धरण
+976:               (Citation)।</span><span class="en">A formal style of writing used in universities and scholarly
+977:               publications. Its features include: clear arguments, evidence-based claims, formal tone, precise language,
+978:               and proper citation.</span></p>
+979:           <ul>
+980:             <li><strong><span class="hi">सिनॉप्सिस (Synopsis):</span><span class="en">Synopsis:</span></strong> <span
+981:                 class="hi">शोध कार्य का खाका। मुख्य तत्व: शीर्षक, समस्या का विवरण, उद्देश्य, परिकल्पना, साहित्य समीक्षा,
+982:                 शोध पद्धति (Methodology)।</span><span class="en">A blueprint of the research work. Key elements: Title,
+983:                 Statement of the Problem, Objectives, Hypothesis, Literature Review, Methodology.</span></li>
+984:           </ul>
+985:           <table>
+986:             <thead>
+987:               <tr>
+988:                 <th><span class="hi">प्रमुख उद्धरण (Citation) शैलियाँ</span><span class="en">Major Citation
+989:                     Styles</span></th>
+990:                 <th><span class="hi">विवरण</span><span class="en">Description</span></th>
+991:               </tr>
+992:             </thead>
+993:             <tbody>
+994:               <tr>
+995:                 <td><strong><span class="hi">APA (अमेरिकन साइकोलॉजिकल एसोसिएशन)</span><span class="en">APA (American
+996:                       Psychological Association)</span></strong></td>
+997:                 <td><span class="hi">लेखक-दिनांक प्रणाली। मुख्य रूप से <strong>सामाजिक विज्ञान (Social
+998:                       Sciences)</strong> में प्रयुक्त। उदा: Rawls, J. (1971). A Theory of Justice.</span><span
+999:                     class="en">Author-Date system. Mainly used in <strong>Social Sciences</strong>. e.g.: Rawls, J.
+1000:                     (1971). A Theory of Justice.</span></td>
+1001:               </tr>
+1002:               <tr>
+1003:                 <td><strong><span class="hi">MLA (मॉडर्न लैंग्वेज एसोसिएशन)</span><span class="en">MLA (Modern Language
+1004:                       Association)</span></strong></td>
+1005:                 <td><span class="hi">लेखक-पृष्ठ प्रणाली। मुख्य रूप से <strong>मानविकी (Humanities)</strong> में
+1006:                     प्रयुक्त।</span><span class="en">Author-Page system. Mainly used in
+1007:                     <strong>Humanities</strong>.</span></td>
+1008:               </tr>
+1009:               <tr>
+1010:                 <td><strong><span class="hi">Chicago / Turabian</span><span class="en">Chicago /
+1011:                       Turabian</span></strong></td>
+1012:                 <td><span class="hi">इतिहास और राजनीति विज्ञान में प्रयुक्त फुटनोट/ग्रंथसूची प्रणाली।</span><span
+1013:                     class="en">Footnote/Bibliography system used in History and Political Science.</span></td>
+1014:               </tr>
+1015:             </tbody>
+1016:           </table>
+1017:         </div>
+1018: 
+1019:         <!-- Paper 206 -->
+1020:         <div class="paper-section">
+1021:           <h3 class="paper-title"><span class="hi">PSC-C-206: अंतर्राष्ट्रीय राजनीति के सिद्धांत</span><span
+1022:               class="en">PSC-C-206: Theories of International Politics</span></h3>
+1023: 
+1024:           <h4 class="unit-title"><span class="hi">इकाई 2: उपागम — यथार्थवाद (Realism)</span><span class="en">Unit 2:
+1025:               Approaches — Realism</span></h4>
+1026:           <p><span class="hi">अंतर्राष्ट्रीय संबंधों में प्रमुख प्रतिमान (Paradigm)। प्रमुख मान्यताएँ: राज्य प्राथमिक
+1027:               कर्ता हैं, अंतर्राष्ट्रीय व्यवस्था अराजक है (कोई विश्व सरकार नहीं), राज्य तर्कसंगत रूप से राष्ट्रीय हित
+1028:               (शक्ति) की पूर्ति करते हैं, और नैतिकता का कोई विशेष स्थान नहीं है।</span><span class="en">The dominant
+1029:               paradigm in International Relations. Key assumptions: States are the primary actors, the international
+1030:               system is anarchic (no world government), states rationally pursue national interest (power), and morality
+1031:               has no significant place.</span></p>
+1032:           <ul>
+1033:             <li><strong><span class="hi">हंस मोर्गेन्थाऊ (शास्त्रीय यथार्थवाद):</span><span class="en">Hans Morgenthau
+1034:                   (Classical Realism):</span></strong> <span class="hi">आधुनिक यथार्थवाद के जनक। पुस्तक: <em>'पॉलिटिक्स
+1035:                   अमंग नेशंस' (1948)</em>। 'शक्ति के रूप में परिभाषित राष्ट्रीय हित' इनकी मुख्य अवधारणा है।</span><span
+1036:                 class="en">Father of modern realism. Book: <em>'Politics Among Nations' (1948)</em>. 'National interest
+1037:                 defined in terms of power' is his core concept.</span></li>
+1038:             <li><strong><span class="hi">थ्यूसीडाइड्स:</span><span class="en">Thucydides:</span></strong> <span
+1039:                 class="hi">प्राचीन ग्रीक इतिहासकार (पेलोपोनेसियन युद्ध)। मेलियन संवाद (Melian Dialogue): "शक्तिशाली वही
+1040:                 करते हैं जो वे कर सकते हैं और कमज़ोर वही सहते हैं जो उन्हें सहना पड़ता है।"</span><span
+1041:                 class="en">Ancient Greek historian (Peloponnesian War). Melian Dialogue: "The strong do what they can
+1042:                 and the weak suffer what they must."</span></li>
+1043:             <li><strong><span class="hi">नव-यथार्थवाद / संरचनात्मक यथार्थवाद (केनेथ वाल्ट्ज़):</span><span
+1044:                   class="en">Neo-Realism / Structural Realism (Kenneth Waltz):</span></strong> <span class="hi">पुस्तक:
+1045:                 <em>'थ्योरी ऑफ इंटरनेशनल पॉलिटिक्स' (1979)</em>। इन्होंने राज्यों के इरादों के बजाय अंतर्राष्ट्रीय
+1046:                 व्यवस्था की 'अराजक संरचना' पर ध्यान केंद्रित किया।</span><span class="en">Book: <em>'Theory of
+1047:                   International Politics' (1979)</em>. Focused on the 'anarchic structure' of the international system
+1048:                 rather than the intentions of states.</span></li>
+1049:           </ul>
+1050: 
+1051:           <h4 class="unit-title"><span class="hi">इकाई 5 से 9: शक्ति संतुलन, सामूहिक सुरक्षा एवं
+1052:               गुटनिरपेक्षता</span><span class="en">Unit 5 to 9: Balance of Power, Collective Security & NAM</span></h4>
+1053:           <ul>
+1054:             <li><strong><span class="hi">शक्ति संतुलन (Balance of Power):</span><span class="en">Balance of
+1055:                   Power:</span></strong> <span class="hi">ऐसी स्थिति जहाँ कोई भी एक राज्य अत्यधिक हावी नहीं हो पाता।
+1056:                 राज्य अपनी सुरक्षा और स्वतंत्रता को बनाए रखने के लिए गठबंधन (Alliances) बनाते हैं।</span><span
+1057:                 class="en">A situation where no single state becomes overly dominant. States form alliances to maintain
+1058:                 their security and independence.</span></li>
+1059:             <li><strong><span class="hi">सामूहिक सुरक्षा (Collective Security):</span><span class="en">Collective
+1060:                   Security:</span></strong> <span class="hi">यह सिद्धांत कि "एक पर हमला सभी पर हमला है" (One for all,
+1061:                 all for one)। यह राष्ट्र संघ (League of Nations) और संयुक्त राष्ट्र चार्टर (अध्याय VII) का आधार
+1062:                 है।</span><span class="en">The principle that "an attack on one is an attack on all" (One for all, all
+1063:                 for one). This is the basis of the League of Nations and the UN Charter (Chapter VII).</span></li>
+1064:             <li><strong><span class="hi">गुटनिरपेक्षता (NAM):</span><span class="en">Non-Aligned Movement
+1065:                   (NAM):</span></strong> <span class="hi">शीत युद्ध के दौरान किसी भी सैन्य गठबंधन (NATO या वारसा पैक्ट)
+1066:                 में शामिल न होने की विदेश नीति। बांडुंग सम्मेलन (1955) इसके लिए प्रारंभिक कदम था; इसे औपचारिक रूप से
+1067:                 बेलग्रेड (1961) में शुरू किया गया था।</span><span class="en">The foreign policy of not joining any
+1068:                 military alliance (NATO or Warsaw Pact) during the Cold War. The Bandung Conference (1955) was the
+1069:                 preliminary step; it was formally launched in Belgrade (1961).</span></li>
+1070:           </ul>
+1071:         </div>
+1072: 
+1073:         <!-- Paper 207 -->
+1074:         <div class="paper-section">
+1075:           <h3 class="paper-title"><span class="hi">PSC-C-207: लोक प्रशासन</span><span class="en">PSC-C-207: Public
+1076:               Administration</span></h3>
+1077: 
+1078:           <h4 class="unit-title"><span class="hi">इकाई 2: लोक प्रशासन के प्रमुख सिद्धांत</span><span class="en">Unit 2:
+1079:               Major Theories of Public Administration</span></h4>
+1080:           <ul>
+1081:             <li><strong><span class="hi">मानवीय संबंध सिद्धांत — एल्टन मेयो:</span><span class="en">Human Relations
+1082:                   Theory — Elton Mayo:</span></strong> <span class="hi"><strong>हाथॉर्न प्रयोग (1924–32)</strong> ने
+1083:                 साबित किया कि कार्यस्थल पर उत्पादकता केवल भौतिक परिस्थितियों (रोशनी/पैसे) पर नहीं, बल्कि सामाजिक कारकों,
+1084:                 कार्यकर्ता के मनोबल और अनौपचारिक समूहों (Informal groups) पर निर्भर करती है।</span><span class="en">The
+1085:                 <strong>Hawthorne Experiments (1924–32)</strong> proved that workplace productivity depends not only on
+1086:                 physical conditions (lighting/money) but on social factors, worker morale, and informal groups.</span>
+1087:             </li>
+1088:             <li><strong><span class="hi">निर्णय-निर्माण सिद्धांत — हर्बर्ट साइमन:</span><span class="en">Decision-Making
+1089:                   Theory — Herbert Simon:</span></strong> <span class="hi">'प्रशासनिक व्यवहार' (1947)। प्रमुख अवधारणा:
+1090:                 <strong>परिसीमित तर्कसंगतता (Bounded Rationality)</strong>। साइमन के अनुसार निर्णय निर्माता असीमित
+1091:                 जानकारी नहीं रखते, इसलिए वे 'इष्टतम' (Optimize) करने के बजाय 'संतोषजनक' (Satisficing) विकल्प चुनते
+1092:                 हैं।</span><span class="en">'Administrative Behavior' (1947). Core concept: <strong>Bounded
+1093:                   Rationality</strong>. Simon argued that decision-makers lack unlimited information, so they choose a
+1094:                 'satisficing' option instead of an 'optimizing' one.</span></li>
+1095:             <li><strong><span class="hi">पारिस्थितिक सिद्धांत — एफ. डब्ल्यू. रिग्स:</span><span class="en">Ecological
+1096:                   Theory — F. W. Riggs:</span></strong> <span class="hi">विकासशील देशों के प्रशासन को समझाने के लिए
+1097:                 <strong>प्रिज़्मेटिक-साला मॉडल (Prismatic-Sala Model)</strong> विकसित किया। (फ्यूज्ड → प्रिज़्मेटिक →
+1098:                 डिफ्रैक्टेड)।</span><span class="en">Developed the <strong>Prismatic-Sala Model</strong> to explain
+1099:                 administration in developing countries. (Fused → Prismatic → Diffracted).</span></li>
+1100:           </ul>
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.
+
+
+=========
+
