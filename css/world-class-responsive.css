@@ -1,0 +1,397 @@
+/* ============================================================
+   BBMKU M.A. Political Science — World-Class Responsive Audit
+   Enforcing the 10-Point Standard (Typography, Spacing, Touch, Layout)
+   ============================================================ */
+
+:root {
+  /* 1. Fluid Typography (clamp: MIN, PREF, MAX) */
+  --text-base-size: clamp(1rem, 1vw + 0.8rem, 1.125rem); /* ~16px to 18px */
+  --text-h1: clamp(1.8rem, 4vw + 1rem, 2.5rem);
+  --text-h2: clamp(1.5rem, 3vw + 0.8rem, 2rem);
+  --text-h3: clamp(1.25rem, 2vw + 0.6rem, 1.5rem);
+  --text-small: clamp(0.85rem, 1vw + 0.5rem, 0.95rem);
+
+  /* 2. Consistent Fluid Spacing (4px/8px baseline) */
+  --space-xs: clamp(4px, 0.5vw, 8px);
+  --space-sm: clamp(8px, 1vw, 16px);
+  --space-md: clamp(16px, 2vw, 24px);
+  --space-lg: clamp(24px, 3vw, 40px);
+  --space-xl: clamp(40px, 5vw, 64px);
+}
+
+/* ============================================================
+   TYPOGRAPHY & LINE-HEIGHT
+   ============================================================ */
+html {
+  font-size: 16px; /* Reset to 16px base for rem predictability */
+}
+
+body {
+  font-size: var(--text-base-size);
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+
+h1, .bento-hero-title {
+  font-size: var(--text-h1);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h2, .semester-title {
+  font-size: var(--text-h2);
+  line-height: 1.3;
+}
+
+h3, .paper-title {
+  font-size: var(--text-h3);
+  line-height: 1.4;
+}
+
+p, li, .info-box, .net-box, .quote-box {
+  line-height: 1.7; /* Improved readability for dense study notes */
+}
+
+/* ============================================================
+   TOUCH & INTERACTION (44x44px Minimum)
+   ============================================================ */
+button, 
+.btn, 
+.control-btn, 
+.print-btn, 
+.bento-fab, 
+.nav-item, 
+.dash-card, 
+.bento-card,
+.quick-action {
+  min-height: 44px; /* WCAG standard */
+  min-width: 44px;
+}
+
+/* Exception for inline links or checkboxes */
+input[type="checkbox"], input[type="radio"] {
+  min-width: 24px;
+  min-height: 24px;
+  cursor: pointer;
+}
+
+/* Input Fields (Forms) */
+input[type="text"], input[type="search"] {
+  min-height: 44px;
+  font-size: var(--text-base-size); /* Prevent iOS zoom */
+}
+
+/* ============================================================
+   LAYOUT & CONTAINER LIMITS
+   ============================================================ */
+body {
+  display: flex;
+  justify-content: center; /* Center app on ultra-wide screens */
+  background: var(--bento-bg);
+}
+
+.tab-pane {
+  max-width: 1600px !important; /* Override old 1200px limit globally */
+}
+
+#app-container {
+  display: flex;
+  width: 100%;
+  max-width: 100%; /* User requested full width */
+  margin: 0;
+  background: var(--surface);
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.content-area {
+  padding: var(--space-lg);
+  flex: 1;
+}
+
+/* ============================================================
+   SIDEBAR & SEARCH BAR REDESIGN
+   ============================================================ */
+@keyframes sidebarGradient {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 0% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+/* Modern Sidebar Styling with Animated Gradient */
+.sidebar {
+  width: 320px !important;
+  min-width: 320px !important;
+  background: linear-gradient(180deg, #ffffff, #f4f7fe, #e6ecff) !important;
+  background-size: 100% 300% !important;
+  animation: sidebarGradient 12s ease-in-out infinite !important;
+  border-right: 1px solid var(--border) !important;
+  box-shadow: 4px 0 24px rgba(0,0,0,0.03) !important;
+}
+
+[data-theme="dark"] .sidebar {
+  background: linear-gradient(180deg, #0f172a, #111827, #1e1b4b) !important;
+  background-size: 100% 300% !important;
+}
+
+/* Polished Nav Items */
+.nav-item {
+  border-radius: 12px !important;
+  margin: 4px 16px !important;
+  padding: 12px 16px !important;
+  transition: all 0.3s ease !important;
+  border-left: none !important;
+  font-size: 1.05rem !important; /* Made text larger */
+  font-weight: 600 !important;
+}
+
+.nav-item i {
+  font-size: 1.25rem !important; /* Made icons larger to match */
+  margin-right: 8px !important;
+}
+
+.nav-separator {
+  font-size: 0.95rem !important; /* Made category headers larger */
+  font-weight: 700 !important;
+  padding: 15px 16px 5px !important;
+  color: var(--text-secondary) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.nav-item:hover {
+  background: rgba(99, 102, 241, 0.08) !important;
+  transform: translateX(4px) !important;
+}
+
+.nav-item.active {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(124, 58, 237, 0.15) 100%) !important;
+  color: var(--bento-primary) !important;
+  box-shadow: none !important;
+}
+
+[data-theme="dark"] .nav-item.active {
+  color: #fff !important;
+}
+
+/* Fix Search Bar & Icon Alignment */
+.search-container {
+  position: relative !important;
+  padding: 20px 16px 10px !important;
+}
+
+.search-container .search-icon {
+  position: absolute !important;
+  left: 32px !important; /* Proper alignment inside input */
+  top: 40px !important; /* Vertically centered relative to input */
+  font-size: 1rem !important;
+  color: #94a3b8 !important;
+  z-index: 2;
+}
+
+#search-input {
+  width: 100% !important;
+  padding: 12px 16px 12px 42px !important; /* Space for the icon */
+  border-radius: 100px !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bento-bg) !important;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.02) !important;
+  transition: all 0.3s ease !important;
+}
+
+#search-input:focus {
+  border-color: var(--bento-accent-blue) !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+}
+
+/* Collapsed state fix for search */
+@media (min-width: 1025px) {
+  .sidebar.collapsed .search-container {
+    padding: 20px 0 !important;
+  }
+  .sidebar.collapsed .search-icon {
+    position: static !important;
+    font-size: 1.3rem !important;
+  }
+  .sidebar.collapsed .nav-item {
+    margin: 8px 10px !important;
+  }
+}
+
+/* ============================================================
+   MOBILE NAVIGATION (Off-Canvas Drawer) & OVERLAYS
+   ============================================================ */
+.sidebar {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1001; /* Above overlay */
+}
+
+/* Default Mobile First */
+@media (max-width: 767px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%); /* Hidden by default */
+    width: 300px !important; /* Slightly smaller on mobile */
+    min-width: 300px !important;
+    max-width: 85vw;
+  }
+
+  .sidebar.open {
+    transform: translateX(0); /* Slide in */
+  }
+
+  .hamburger-btn {
+    display: flex !important; /* Ensure hamburger is visible */
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .bento-grid {
+    grid-template-columns: 1fr; /* Single column on mobile */
+  }
+}
+
+/* ============================================================
+   RESPONSIVE BREAKPOINTS (Grid & Flex)
+   ============================================================ */
+/* Large Mobile & Tablet */
+@media (min-width: 768px) {
+  .bento-span-3 { grid-column: span 6; }
+  .bento-span-4 { grid-column: span 6; }
+}
+
+/* Desktop & Collapsed Sidebar Support */
+@media (min-width: 768px) {
+  .bento-span-3 { grid-column: span 6; }
+  .bento-span-4 { grid-column: span 6; }
+  
+  .hamburger-btn {
+    display: flex !important; /* Keep visible on desktop/tablet for collapsing */
+  }
+  
+  .sidebar {
+    position: static;
+    transform: translateX(0) !important;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .sidebar.collapsed {
+    width: 80px !important;
+    min-width: 80px !important;
+  }
+
+  .sidebar.collapsed .sidebar-header h2,
+  .sidebar.collapsed .sidebar-header p,
+  .sidebar.collapsed .nav-item span,
+  .sidebar.collapsed .nav-separator,
+  .sidebar.collapsed .search-container input {
+    display: none !important;
+  }
+  
+  .sidebar.collapsed .search-container {
+    padding: 14px 0;
+    text-align: center;
+  }
+
+  .sidebar.collapsed .search-icon {
+    position: static;
+    transform: none;
+    font-size: 1.2rem;
+  }
+
+  .sidebar.collapsed .nav-item {
+    justify-content: center;
+    padding: 12px 0;
+    margin: 8px 10px;
+  }
+  
+  .sidebar.collapsed .nav-item i {
+    font-size: 1.3rem;
+  }
+}
+
+/* Desktop & 4K */
+@media (min-width: 1441px) {
+  .bento-hero {
+    padding: var(--space-xl);
+  }
+  
+  .tab-pane {
+    max-width: 1600px; /* Made content container significantly wider */
+    margin: 0 auto;
+  }
+}
+
+/* ============================================================
+   PERFORMANCE & MEDIA
+   ============================================================ */
+img, video {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ============================================================
+   HOVER EFFECTS STRICTLY FOR MOUSE/DESKTOP
+   ============================================================ */
+@media (hover: none) and (pointer: coarse) {
+  /* Disable sticky hovers on touch devices */
+  .bento-card:hover,
+  .btn:hover,
+  .nav-item:hover {
+    transform: none !important;
+    box-shadow: inherit !important;
+  }
+  
+  /* Use active state instead */
+  .bento-card:active,
+  .btn:active,
+  .nav-item:active {
+    transform: scale(0.98) !important;
+    opacity: 0.8;
+  }
+}
+
+/* ============================================================
+   ACCESSIBILITY FIXES
+   ============================================================ */
+/* Focus states for keyboard navigation */
+:focus-visible {
+  outline: 3px solid var(--bento-accent-blue);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (min-width: 1025px) {
+  .bento-span-3 { grid-column: span 3; }
+  .bento-span-4 { grid-column: span 4; }
+}
+
+/* ============================================================
+   GLOBAL GLOWING EFFECT FOR ALL CARDS
+   ============================================================ */
+.bento-card, .dash-card, .info-box, .paper-card {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease, border-color 0.4s ease !important;
+}
+
+.bento-card:hover,
+.dash-card:hover,
+.info-box:hover,
+.paper-card:hover {
+  box-shadow: 0 0 25px rgba(99, 102, 241, 0.5), 0 8px 30px rgba(0,0,0,0.1) !important;
+  border-color: rgba(99, 102, 241, 0.8) !important;
+  transform: translateY(-6px) scale(1.01) !important;
+  z-index: 10;
+}
+
+[data-theme="dark"] .bento-card:hover,
+[data-theme="dark"] .dash-card:hover,
+[data-theme="dark"] .info-box:hover,
+[data-theme="dark"] .paper-card:hover {
+  box-shadow: 0 0 30px rgba(124, 58, 237, 0.6), 0 8px 30px rgba(0,0,0,0.4) !important;
+  border-color: rgba(124, 58, 237, 0.9) !important;
+}

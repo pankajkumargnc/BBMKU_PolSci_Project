@@ -5,6 +5,8 @@
   <title>BBMKU M.A. Political Science - Master Dashboard</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css?v=1782814358">
+  <link rel="stylesheet" href="css/bento-design.css?v=2">
+  <link rel="stylesheet" href="css/world-class-responsive.css?v=4">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
 
   <!-- Google Fonts: Playfair Display & Outfit -->
@@ -30,10 +32,11 @@
 
 
   <!-- Mobile Overlay -->
-  <div class="overlay" id="overlay"></div>
+  <div class="overlay" id="overlay" aria-hidden="true" onclick="document.getElementById('sidebar').classList.remove('open'); document.getElementById('overlay').classList.remove('active');"></div>
 
+  <div id="app-container">
   <!-- Sidebar -->
-  <aside class="sidebar" id="sidebar">
+  <aside class="sidebar" id="sidebar" aria-label="Main Navigation">
     <div class="sidebar-header">
       <h2><span class="hi">BBMKU M.A. नोट्स</span><span class="en">BBMKU M.A. Notes</span></h2>
       <p><span class="hi">पूर्ण अध्ययन सामग्री</span><span class="en">Complete Study Material</span></p>
@@ -83,12 +86,12 @@
         <div class="reading-progress-fill" id="reading-progress-fill"></div>
       </div>
       <div class="header-left">
-        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle Menu"><i class="fas fa-bars"></i></button>
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle Menu" onclick="if(window.innerWidth > 1024) { document.getElementById('sidebar').classList.toggle('collapsed'); } else { document.getElementById('sidebar').classList.add('open'); document.getElementById('overlay').classList.add('active'); }"><i class="fas fa-bars"></i></button>
         <h1 id="current-tab-title"><i class="fas fa-home"></i> <span class="hi">डैशबोर्ड</span><span class="en">Dashboard</span></h1>
       </div>
       <div class="header-controls">
-        <button class="control-btn" id="lang-toggle" title="Toggle Language">EN</button>
-        <button class="control-btn" id="dark-mode-toggle" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+        <button class="control-btn" id="lang-toggle" title="Toggle Language" aria-label="Switch Language">EN</button>
+        <button class="control-btn" id="dark-mode-toggle" title="Toggle Dark Mode" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
         <button class="print-btn" onclick="window.print()"><i class="fas fa-print"></i> <span class="hi">PDF /
             प्रिंट</span><span class="en">PDF / Print</span></button>
       </div>
@@ -106,153 +109,104 @@
       </div>
 
       <!-- HOME DASHBOARD -->
-      <div id="home" class="tab-pane active">
+      <div id="home" class="tab-pane active" style="background: transparent; border: none; box-shadow: none; padding: 0;">
 
-        <!-- PRO DASHBOARD WIDGETS -->
-        
-        <!-- SCHOLAR QUOTE WIDGET -->
-        <div class="dashboard-widget scholar-quote-widget glass-card" style="margin-bottom: 20px;">
-          <h3><i class="fas fa-quote-left"></i> <span class="en">Daily Scholar Quote</span><span class="hi">दैनिक सुविचार</span></h3>
-          <p id="typewriter-text" style="font-size: 1.3rem; font-family: var(--font-secondary); min-height: 50px; margin-top: 15px;"></p>
-        </div>
-
-        <div class="pro-dashboard-grid">
-          <div data-aos="zoom-in" class="dashboard-widget pomodoro-widget glass-card">
-            <h3><i class="fas fa-clock"></i> <span class="en">Pomodoro Timer</span><span class="hi">पोमोडोरो टाइमर</span></h3>
-            <div class="timer-display" id="timer-display">25:00</div>
-            <div class="timer-controls">
-              <button id="start-timer" class="btn"><i class="fas fa-play"></i></button>
-              <button id="pause-timer" class="btn"><i class="fas fa-pause"></i></button>
-              <button id="reset-timer" class="btn"><i class="fas fa-undo"></i></button>
+        <!-- Hero Section -->
+        <div class="bento-hero">
+          <div class="bento-hero-header">
+            <div>
+              <h1 class="bento-hero-title"><span class="hi">BBMKU M.A. राजनीति विज्ञान</span><span class="en">BBMKU M.A. Political Science</span></h1>
+              <p class="bento-hero-subtitle"><span class="hi">संपूर्ण अध्ययन डैशबोर्ड — UGC NET तैयारी</span><span class="en">Complete Study Dashboard — UGC NET Preparation</span></p>
             </div>
-            <p id="timer-status" class="timer-status"><span class="en">Ready to study!</span><span class="hi">पढ़ाई के लिए तैयार!</span></p>
+            <i class="fas fa-graduation-cap" style="font-size: 3rem; opacity: 0.8;"></i>
           </div>
           
-          <div data-aos="zoom-in" class="dashboard-widget progress-widget glass-card">
-            <h3><i class="fas fa-chart-line"></i> <span class="en">Syllabus Progress</span><span class="hi">सिलेबस प्रगति</span></h3>
+          <div class="bento-search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" id="bento-search-input" placeholder="Search syllabus, notes, pyqs..." autocomplete="off">
+          </div>
 
-            <div class="circular-progress" id="circular-progress">
-              <div class="inner-circle">
-                <span id="progress-text">0%</span>
-              </div>
+          <div class="bento-metrics">
+            <div class="bento-metric-pill streak">
+              <i class="fas fa-fire"></i> <span id="dash-streak">0</span> Day Streak
             </div>
-            <p style="margin-top: 15px;"><span class="en">Overall Completion</span><span class="hi">कुल प्रगति</span></p>
-
-            <div class="semester-checkboxes">
-              <label><input type="checkbox" class="sem-check" data-sem="1"> Semester 1</label>
-              <label><input type="checkbox" class="sem-check" data-sem="2"> Semester 2</label>
-              <label><input type="checkbox" class="sem-check" data-sem="3"> Semester 3</label>
-              <label><input type="checkbox" class="sem-check" data-sem="4"> Semester 4</label>
+            <div class="bento-metric-pill progress">
+              <i class="fas fa-chart-line"></i> <span id="progress-text-bento">0%</span> Syllabus Completed
             </div>
           </div>
         </div>
 
-        <div class="dashboard-hero">
-          <div class="hero-particles" id="hero-particles"></div>
-          <div class="hero-content">
-            <div class="hero-icon-wrap"><i class="fas fa-graduation-cap"></i></div>
-            <h2><span class="hi">BBMKU M.A. राजनीति विज्ञान</span><span class="en">BBMKU M.A. Political Science</span>
-            </h2>
-            <p><span class="hi">संपूर्ण अध्ययन डैशबोर्ड — UGC NET तैयारी</span><span class="en">Complete Study Dashboard
-                — UGC NET Preparation</span></p>
-            <div class="hero-quote" id="hero-quote"></div>
+        <!-- Bento Grid Layout -->
+        <div class="bento-grid">
+          
+          <!-- UGC NET Highlight (Span 12 for full width or Span 8) -->
+          <div class="bento-card bento-span-12 bento-ugc-card" onclick="document.querySelector('[data-tab=pyq]').click()">
+            <div class="bento-ugc-content">
+              <h2>UGC NET 5-Year PYQ Masterclass</h2>
+              <p>Prepare for JRF with chapter-wise previous year questions and mock tests.</p>
+            </div>
+            <button class="bento-primary-cta">
+              Start UGC NET Mock Test <i class="fas fa-arrow-right"></i>
+            </button>
           </div>
-        </div>
 
-        <div class="dashboard-grid">
-          <!-- Streak Card -->
-          <div class="dash-card dash-streak">
-            <div class="dash-card-icon"><i class="fas fa-fire"></i></div>
-            <div class="dash-card-info">
-              <span class="dash-card-value" id="dash-streak">0</span>
-              <span class="dash-card-label"><span class="hi">दिन की स्ट्रीक</span><span class="en">Day
-                  Streak</span></span>
+          <!-- Semester 1 -->
+          <div class="bento-card bento-span-3 bento-sem-card" onclick="document.querySelector('[data-tab=sem1]').click()">
+            <div class="bento-sem-icon sem-1-icon"><i class="fas fa-book-open"></i></div>
+            <div>
+              <h3><span class="hi">सेमेस्टर I</span><span class="en">Semester I</span></h3>
+              <p>Political Theory & Thought</p>
             </div>
           </div>
-          <!-- Quiz Card -->
-          <div class="dash-card dash-quiz" onclick="document.querySelector('[data-tab=quiz]').click()">
-            <div class="dash-card-icon"><i class="fas fa-brain"></i></div>
-            <div class="dash-card-info">
-              <span class="dash-card-value" id="dash-quiz-avg">0%</span>
-              <span class="dash-card-label"><span class="hi">क्विज़ औसत</span><span class="en">Quiz
-                  Average</span></span>
-            </div>
-          </div>
-          <!-- Flashcard Card -->
-          <div class="dash-card dash-fc" onclick="document.querySelector('[data-tab=flashcard]').click()">
-            <div class="dash-card-icon"><i class="fas fa-clone"></i></div>
-            <div class="dash-card-info">
-              <span class="dash-card-value" id="dash-fc-known">0</span>
-              <span class="dash-card-label"><span class="hi">कार्ड याद हैं</span><span class="en">Cards
-                  Known</span></span>
-            </div>
-          </div>
-          <!-- Gamification (Level & XP) -->
-          <div class="dash-card dash-total">
-            <div class="dash-card-icon"><i class="fas fa-star"></i></div>
-            <div class="dash-card-info">
-              <span class="dash-card-value" id="dash-level-xp">Lvl 1 (0 XP)</span>
-              <span class="dash-card-label"><span class="hi">वर्तमान स्तर</span><span class="en">Current Level</span></span>
-            </div>
-          </div>
-        </div>
 
-        <!-- Semester Progress -->
-        <div class="dash-section">
-          <h3 class="dash-section-title"><i class="fas fa-tasks"></i> <span class="hi">सेमेस्टर प्रगति</span><span class="en">Semester Progress</span></h3>
-          <div class="semester-progress-grid" id="semester-progress-grid">
-            <div class="sem-progress-card" onclick="document.querySelector('[data-tab=sem1]').click()">
-              <div class="sem-ring" data-sem="sem1"><svg viewBox="0 0 80 80">
-                  <circle cx="40" cy="40" r="35" fill="none" stroke="var(--border)" stroke-width="6"></circle>
-                  <circle class="sem-ring-fill" cx="40" cy="40" r="35" fill="none" stroke="#6366f1" stroke-width="6" stroke-dasharray="0 220" stroke-linecap="round" transform="rotate(-90 40 40)"></circle>
-                </svg><span class="sem-ring-text">0%</span></div>
-              <span class="sem-ring-label"><span class="hi">सेम I</span><span class="en">Sem I</span></span>
-            </div>
-            <div class="sem-progress-card" onclick="document.querySelector('[data-tab=sem2]').click()">
-              <div class="sem-ring" data-sem="sem2"><svg viewBox="0 0 80 80">
-                  <circle cx="40" cy="40" r="35" fill="none" stroke="var(--border)" stroke-width="6"></circle>
-                  <circle class="sem-ring-fill" cx="40" cy="40" r="35" fill="none" stroke="#a855f7" stroke-width="6" stroke-dasharray="0 220" stroke-linecap="round" transform="rotate(-90 40 40)"></circle>
-                </svg><span class="sem-ring-text">0%</span></div>
-              <span class="sem-ring-label"><span class="hi">सेम II</span><span class="en">Sem II</span></span>
-            </div>
-            <div class="sem-progress-card" onclick="document.querySelector('[data-tab=sem3]').click()">
-              <div class="sem-ring" data-sem="sem3"><svg viewBox="0 0 80 80">
-                  <circle cx="40" cy="40" r="35" fill="none" stroke="var(--border)" stroke-width="6"></circle>
-                  <circle class="sem-ring-fill" cx="40" cy="40" r="35" fill="none" stroke="#10b981" stroke-width="6" stroke-dasharray="0 220" stroke-linecap="round" transform="rotate(-90 40 40)"></circle>
-                </svg><span class="sem-ring-text">0%</span></div>
-              <span class="sem-ring-label"><span class="hi">सेम III</span><span class="en">Sem III</span></span>
-            </div>
-            <div class="sem-progress-card" onclick="document.querySelector('[data-tab=sem4]').click()">
-              <div class="sem-ring" data-sem="sem4"><svg viewBox="0 0 80 80">
-                  <circle cx="40" cy="40" r="35" fill="none" stroke="var(--border)" stroke-width="6"></circle>
-                  <circle class="sem-ring-fill" cx="40" cy="40" r="35" fill="none" stroke="#f59e0b" stroke-width="6" stroke-dasharray="0 220" stroke-linecap="round" transform="rotate(-90 40 40)"></circle>
-                </svg><span class="sem-ring-text">0%</span></div>
-              <span class="sem-ring-label"><span class="hi">सेम IV</span><span class="en">Sem IV</span></span>
+          <!-- Semester 2 -->
+          <div class="bento-card bento-span-3 bento-sem-card" onclick="document.querySelector('[data-tab=sem2]').click()">
+            <div class="bento-sem-icon sem-2-icon"><i class="fas fa-book-reader"></i></div>
+            <div>
+              <h3><span class="hi">सेमेस्टर II</span><span class="en">Semester II</span></h3>
+              <p>International Relations</p>
             </div>
           </div>
-        </div>
 
-        <!-- Quick Actions -->
-        <div class="dash-section">
-          <h3 class="dash-section-title"><i class="fas fa-bolt"></i> <span class="hi">त्वरित पहुँच</span><span class="en">Quick Actions</span></h3>
-          <div class="quick-actions-grid">
-            <button class="quick-action" onclick="document.querySelector('[data-tab=quiz]').click()">
-              <i class="fas fa-play-circle"></i>
-              <span><span class="hi">क्विज़ शुरू करें</span><span class="en">Start Quiz</span></span>
-            </button>
-            <button class="quick-action" onclick="document.querySelector('[data-tab=flashcard]').click()">
-              <i class="fas fa-clone"></i>
-              <span><span class="hi">फ्लैशकार्ड</span><span class="en">Flashcards</span></span>
-            </button>
-            <button class="quick-action" onclick="document.querySelector('[data-tab=rev]').click()">
-              <i class="fas fa-bolt"></i>
-              <span><span class="hi">रिवीजन</span><span class="en">Revision</span></span>
-            </button>
-            <button class="quick-action" onclick="document.querySelector('[data-tab=ugc]').click()">
-              <i class="fas fa-question-circle"></i>
-              <span><span class="hi">UGC NET प्रश्न</span><span class="en">UGC NET Q&amp;A</span></span>
-            </button>
+          <!-- Semester 3 -->
+          <div class="bento-card bento-span-3 bento-sem-card" onclick="document.querySelector('[data-tab=sem3]').click()">
+            <div class="bento-sem-icon sem-3-icon"><i class="fas fa-layer-group"></i></div>
+            <div>
+              <h3><span class="hi">सेमेस्टर III</span><span class="en">Semester III</span></h3>
+              <p>State Politics & Issues</p>
+            </div>
           </div>
+
+          <!-- Semester 4 -->
+          <div class="bento-card bento-span-3 bento-sem-card" onclick="document.querySelector('[data-tab=sem4]').click()">
+            <div class="bento-sem-icon sem-4-icon"><i class="fas fa-globe"></i></div>
+            <div>
+              <h3><span class="hi">सेमेस्टर IV</span><span class="en">Semester IV</span></h3>
+              <p>Foreign Policy & Law</p>
+            </div>
+          </div>
+
+          <!-- Debate Room -->
+          <div class="bento-card bento-span-4 bento-feature-card" onclick="document.querySelector('[data-tab=debate]').click()">
+            <i class="fas fa-balance-scale" style="color: #8b5cf6;"></i>
+            <h3><span class="hi">डिबेट रूम</span><span class="en">Debate Room</span></h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">Interactive argumentation</p>
+          </div>
+
+          <!-- Chronology Game -->
+          <div class="bento-card bento-span-4 bento-feature-card" onclick="document.querySelector('[data-tab=chronology]').click()">
+            <i class="fas fa-sort-numeric-down" style="color: #14b8a6;"></i>
+            <h3><span class="hi">क्रोनोलॉजी गेम</span><span class="en">Chronology Game</span></h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">Master historical timelines</p>
+          </div>
+
+          <!-- Flashcards -->
+          <div class="bento-card bento-span-4 bento-feature-card" onclick="document.querySelector('[data-tab=flashcard]').click()">
+            <i class="fas fa-clone" style="color: #f43f5e;"></i>
+            <h3><span class="hi">फ्लैशकार्ड्स</span><span class="en">Flashcards</span></h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">Quick concept revision</p>
+          </div>
+          
         </div>
       </div>
 
@@ -3475,5 +3429,19 @@
 
 
   <script src="js/phase2-logic.js?v=1782814358"></script>
+
+  <!-- Floating Action Buttons (FAB) -->
+  <div class="bento-fab-container">
+    <button class="bento-fab" id="bento-dark-mode" aria-label="Toggle Dark Mode" onclick="document.getElementById('dark-mode-toggle').click()">
+      <i class="fas fa-moon"></i>
+    </button>
+    <button class="bento-fab" id="bento-translate" aria-label="Google Translate" onclick="document.getElementById('lang-toggle').click()">
+      <i class="fas fa-language"></i>
+    </button>
+    <button class="bento-fab" id="bento-ar-helper" aria-label="AR Helper (Devil)" onclick="document.querySelector('[data-tab=ar-masterclass]').click()">
+      <i class="fas fa-vr-cardboard"></i>
+    </button>
+  </div>
+  </div> <!-- End of #app-container -->
 
 </body></html>
