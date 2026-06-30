@@ -428,10 +428,14 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const toggleSidebar = () => {
-    if (sidebar && sidebar.classList.contains('open')) {
-      closeSidebar();
+    if (window.innerWidth >= 768) {
+      if (sidebar) sidebar.classList.toggle('collapsed');
     } else {
-      openSidebar();
+      if (sidebar && sidebar.classList.contains('open')) {
+        closeSidebar();
+      } else {
+        openSidebar();
+      }
     }
   };
 
