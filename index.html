@@ -6,7 +6,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css?v=1782814358">
   <link rel="stylesheet" href="css/bento-design.css?v=2">
-  <link rel="stylesheet" href="css/world-class-responsive.css?v=4">
+  <link rel="stylesheet" href="css/world-class-responsive.css?v=5">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
 
   <!-- Google Fonts: Playfair Display & Outfit -->
@@ -3444,4 +3444,17 @@
   </div>
   </div> <!-- End of #app-container -->
 
+  <script>
+    // Auto-hide mobile sidebar when a navigation item is clicked
+    document.querySelectorAll('.sidebar .nav-item').forEach(item => {
+      item.addEventListener('click', () => {
+        if (window.innerWidth < 1025) {
+          const sidebar = document.getElementById('sidebar');
+          const overlay = document.getElementById('overlay');
+          if(sidebar) sidebar.classList.remove('open');
+          if(overlay) overlay.classList.remove('active');
+        }
+      });
+    });
+  </script>
 </body></html>

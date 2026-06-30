@@ -230,18 +230,19 @@ body {
 /* Default Mobile First */
 @media (max-width: 767px) {
   .sidebar {
-    position: fixed;
+    position: fixed !important;
     top: 0;
     left: 0;
     height: 100vh;
-    transform: translateX(-100%); /* Hidden by default */
-    width: 300px !important; /* Slightly smaller on mobile */
-    min-width: 300px !important;
-    max-width: 85vw;
+    transform: translateX(-100%) !important; /* Hidden by default */
+    width: 280px !important; /* Smaller on mobile */
+    min-width: 280px !important;
+    max-width: 80vw !important;
+    box-shadow: 10px 0 30px rgba(0,0,0,0.5) !important;
   }
 
   .sidebar.open {
-    transform: translateX(0); /* Slide in */
+    transform: translateX(0) !important; /* Slide in */
   }
 
   .hamburger-btn {
