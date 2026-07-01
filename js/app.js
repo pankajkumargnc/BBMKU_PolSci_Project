@@ -873,4 +873,39 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // =====================================================================
+  //  15. AUTO-HIDE FLOATING MENUS ON SCROLL (MOBILE)
+  // =====================================================================
+  const contentArea = document.querySelector('.content-area');
+  let lastScrollY = contentArea ? contentArea.scrollTop : 0;
+  const bottomNav = document.getElementById('mobile-bottom-nav');
+  const fabContainer = document.querySelector('.bento-fab-container');
+  
+  if (contentArea) {
+    contentArea.addEventListener('scroll', () => {
+      const currentY = contentArea.scrollTop;
+      
+      // Threshold to prevent bouncing on small scrolls
+      if (Math.abs(currentY - lastScrollY) < 10) return;
+      
+      if (currentY > lastScrollY && currentY > 100) {
+        // Scrolling Down - Hide
+        if(bottomNav) bottomNav.classList.add('hidden-on-scroll');
+        if(fabContainer) fabContainer.classList.add('hidden-on-scroll');
+      } else {
+        // Scrolling Up - Show
+        if(bottomNav) bottomNav.classList.remove('hidden-on-scroll');
+        if(fabContainer) fabContainer.classList.remove('hidden-on-scroll');
+      }
+      
+      // Ensure they reappear at the absolute top
+      if (currentY < 50) {
+        if(bottomNav) bottomNav.classList.remove('hidden-on-scroll');
+        if(fabContainer) fabContainer.classList.remove('hidden-on-scroll');
+      }
+      
+      lastScrollY = currentY;
+    }, { passive: true });
+  }
+
 });

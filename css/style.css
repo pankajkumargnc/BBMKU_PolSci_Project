@@ -857,22 +857,7 @@ input:focus-visible {
    16. RESPONSIVE — TABLET & MOBILE  (max-width: 768px)
    ============================================================ */
 @media (max-width: 768px) {
-  /* Sidebar off-canvas */
-  .sidebar {
-    position: fixed;
-    left: -300px;
-    top: 0;
-    width: var(--sidebar-width);
-    min-width: var(--sidebar-width);
-    height: 100vh;
-    transform: translateX(0);
-    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 1001;
-  }
-
-  .sidebar.open {
-    transform: translateX(300px);
-  }
+  /* Sidebar is handled by world-class-responsive.css */
 
   .overlay.active {
     display: block;
@@ -2123,7 +2108,7 @@ input:focus-visible {
 
 .fc-category-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 10px;
 }
 
@@ -3260,4 +3245,15 @@ button.btn:active, .print-btn:active, button.mock-action-btn:active {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+/* Auto-hide on scroll styles */
+.mobile-bottom-nav, .bento-fab-container {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-bottom-nav.hidden-on-scroll {
+  transform: translateY(150%) !important;
+}
+.bento-fab-container.hidden-on-scroll {
+  transform: translateY(150px) !important;
 }
